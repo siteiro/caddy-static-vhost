@@ -38,7 +38,7 @@ domain by responding with a 200 status code.
 |------------------------------|------------------------------------------|----------|----------------------------------------------------------|
 | `HOSTNAME`                   | Parent domain of subdomains              | Yes      | `example.net`                                            |
 | `MARKETING_URL`              | Marketing website URL                    | Yes      | `https://example.com`                                    |
-| `DNS_CHECK_ENDPOINT`         | Subdomain DNS check endpoint             | Yes      | `https://api.example.com/v1/dns/check`                   |
+| `DOMAIN_APPROVAL_URL`        | Custom domain approval endpoint URL      | Yes      | `https://api.example.com/v1/domain/check`                |
 | `DIGITALOCEAN_DNS_API_TOKEN` | DigitalOcean API token with write access | Yes      |                                                          |
 | `ACME_CA`                    | Alternative ACME CA URL                  | No       | `https://acme-staging-v02.api.letsencrypt.org/directory` |
 
