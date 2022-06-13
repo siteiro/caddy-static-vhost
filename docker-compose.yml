@@ -13,8 +13,8 @@ services:
     environment:
       - "HOSTNAME=example.net"
       - "MARKETING_URL=https://example.com"
-      - "DNS_CHECK_ENDPOINT=https://api.example.com/dnscheck"
-      - "DIGITALOCEAN_DNS_API_TOKEN:${DIGITALOCEAN_DNS_API_TOKEN}" # provided externally
+      - "DOMAIN_APPROVAL_URL=https://api.example.com/v1/domain/check"
+      - "DIGITALOCEAN_DNS_API_TOKEN=${DIGITALOCEAN_DNS_API_TOKEN}" # provided externally
 volumes:
   caddy_data:
     external: true
