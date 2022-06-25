@@ -1,7 +1,7 @@
 # This is just an example!
 services:
   caddy:
-    image: "ghcr.io/steve-taylor/caddy-static-vhost:latest"
+    image: "ghcr.io/siteiro/caddy-static-vhost:latest"
     restart: unless-stopped
     ports:
       - "80:80"

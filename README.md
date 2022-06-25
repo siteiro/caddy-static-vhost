@@ -8,6 +8,7 @@ It's powered by Caddy Server, Let's Encrypt and DigitalOcean DNS.
 
 * A domain
 * DigitalOcean DNS
+* A wildcard DNS entry for unlimited subdomains of your domain (e.g. `*.example.net`)
 * DigitalOcean API token with write access
 * Marketing website URL
 
