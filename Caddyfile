@@ -18,7 +18,11 @@
 # Subdomains - Use a wildcard certificate via DNS-01 challenge
 *.{$HOSTNAME} {
     tls {
-        dns digitalocean {env.DIGITALOCEAN_DNS_API_TOKEN}
+        issuer acme {
+            dns digitalocean {env.DIGITALOCEAN_DNS_API_TOKEN}
+            propagation_delay 30s
+            propagation_timeout -1
+        }
     }
 
     encode gzip zstd
